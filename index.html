@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ОСББ</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carousel1').bxSlider({
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                pause: 7000,
+                pager: true,
+                slideWidth: 361,
+                responsive: true,
+                minSlides: 3,
+                maxSlides: 3,
+                slideMargin: 25
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#carousel2').bxSlider({
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                pause: 7000,
+                slideWidth: 1280,
+                responsive: true,
+                pager: true,
+                minSlides: 1,
+                maxSlides: 1,
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+<!--    Шапка с контактами и кнопками-->
+    <div class="contact-top">
+        <ul class="contact-top-l">
+            <li class="contact-top-l-i">
+                <div class="contact-top-icon num"></div>
+                <div class="contact-top-num">
+                    +38 (067) 329 29 47
+                </div>
+            </li>
+            <li class="contact-top-l-i">
+                <a href="mailto:e-mailmail@i.ua" class="contact-top-l-i-link">
+                    <div class="contact-top-icon info"></div>
+                    <div class="contact-top-info">
+                        e-mailmail@i.ua
+                    </div>
+                </a>
+            </li>
+        </ul>
+            <h1 class="contact-top-title">
+                <div><span>Оcбб</span> "Гончара 62"</div>
+            </h1>
+        <ul class="contact-top-l">
+            <li class="contact-top-l-i">
+                <a href="" class="contact-top-l-i-link">
+                    <div class="contact-top-l-i-link-user"></div>
+                    <div class="contact-top-l-i-link-enter">
+                        Вход
+                    </div>
+                </a>
+            </li>
+            <li class="contact-top-l-i">
+                <a href="" class="contact-top-l-i-link">
+                    <div class="contact-top-l-i-link-register">
+                        Регистрация
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+<!--    Меню в шапке => бургер-->
+    <input class="burger-input" id="check" type="checkbox">
+    <div class="burger-l">
+        <h3 class="burger-l-contact-top-title">
+            <div><span>Оcбб</span> "Гончара 62"</div>
+        </h3>
+        <label class="burger" for="check">
+            <div class="burger-icon">
+                <img class="burger-img" src="img/burger.png" alt="" width="36" height="14">
+            </div>
+        </label>
+    </div>
+    <nav class="osbb-menu">
+        <ul class="osbb-menu-l">
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Главная
+                </a>
+            </li>
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Объявления
+                </a>
+            </li>
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Управление ОСМД
+                </a>
+            </li>
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Отчетность деятельности
+                </a>
+            </li>
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Форум для жителей
+                </a>
+            </li>
+            <li class="osbb-menu-l-i">
+                <a href="" class="osbb-menu-l-i-link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--    Картинка с формой-->
+<div class="osbb-top">
+    <div class="osbb-top-block">
+        <div class="osbb-top-block-inner">
+            <div class="osbb-top-block-title">Зарегистрируйтесь сейчас</div>
+            <div class="osbb-top-block-txt">чтобы знать новости первым!</div>
+            <form class="form-register">
+                 <div class="form-register-inner">
+                    <input type="text" id="tags1" class="form-register-field" placeholder="Ваше имя" required="required" autocomplete="off">
+                    <input type="text" id="tags2" class="form-register-field" placeholder="Ваш номер телефона" required="required" autocomplete="off">
+                 </div>
+                <button type="submit" class="form-register-btn">Готово!</button>
+            </form>
+            <ul class="osbb-top-block-steps">
+                <li class="osbb-top-block-steps-img"></li>
+                <li class="osbb-top-block-steps-img"></li>
+                <li class="osbb-top-block-steps-img"></li>
+            </ul>
+            <ul class="osbb-top-block-steps">
+                <li class="osbb-top-block-steps-txt">Регистрируйтесь</li>
+                <li class="osbb-top-block-steps-txt">В курсе всех новостей</li>
+                <li class="osbb-top-block-steps-txt">Просто и понятно</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Блок слайдер галерея-->
+<div class="osbb-line"></div>
+<div class="osbb-gallery-title">Последние фото</div>
+<div class="osbb-gallery-txt">Мы создаем новый стиль управления жильем! Чем наш стиль работы отличается от других?
+    Мы создаем территорию для комфортного, безопасного жизни людей, доверивших управление
+    своим домом Жилой управляющей компании.
+</div>
+<div class="osbb-gallery">
+    <ul id="carousel1">
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+        <li class="osbb-gallery-slide">
+            <a href=""></a>
+        </li>
+    </ul>
+</div>
+<ul class="foto-gallery-l">
+    <li class="foto-gallery-l-i">
+        <a class="foto-gallery-l-i-link" href=""></a>
+    </li>
+    <li class="foto-gallery-l-i">
+        <a class="foto-gallery-l-i-link" href=""></a>
+    </li>
+    <li class="foto-gallery-l-i">
+        <a class="foto-gallery-l-i-link" href=""></a>
+    </li>
+
+</ul>
+<div class="osbb-gallery-link-wrap">
+    <a href="" class="osbb-gallery-link btn-line">Смотреть все ОСББ</a>
+    <div class="osbb-plant"></div>
+</div>
+<div class="osbb-line"></div>
+<!--Информационный блок "Коммунальные услуги"-->
+<div class="osbb-gallery-title">Информация про коммунальные услуги</div>
+<div class="osbb-info">
+<div class="osbb-gallery-txt osbb-info-services">
+    <p>Присоединение дома в ОСМД актуалено и для соседних домов, в которых уже успешно
+    функционирует объединене.</p>
+    <p>Совладельцы дома, желающих присоединиться к ОСМД, должны провести общее собрание,
+    на которых утвердят форму управления домом и решат присоединиться к ОСМД, с которым имеют общую придомовую территорию, элементы благоустройства и тому подобное.
+    </p>
+    <p>Далее надо письменно обратиться к председателю правления
+    соответствующего ОСМД с просьбой рассмотреть вопрос о присоединении к ОСМД совладельцев дома. Правление
+    созывает общее собрание ОСМД, на которых решает вопрос о присоединении.
+    </p>
+     <p>В случае положительного решения
+         созывают общие общее собрание с участием совладельцев обеих домов.</p>
+    <p>Там утверждают новую редакцию устава
+    совместного ОСМД, решают другие вопросы, связанные с текущей деятельностью ОСМД. Новая редакция устава подают
+    госрегистратору.</p>
+    <p> Третий вариант присоединения дома к созданного ОСМД - создание ассоциации ОСМД.
+    </p>
+</div>
+<div class="osbb-info-block">
+    <h3 class="osbb-info-block-title">Постачальники послуг <br>(подати показники)</h3>
+    <div class="osbb-line"></div>
+    <ul class="osbb-info-block-l">
+        <li class="osbb-info-block-l-i">
+            <a href="" class="osbb-info-block-l-i-link">
+                <div class="osbb-info-block-l-i-img"></div>
+                <div class="osbb-info-block-l-i-link-txt">Київенерго (електропостачання)</div>
+            </a>
+        </li>
+        <li class="osbb-info-block-l-i">
+            <a href="" class="osbb-info-block-l-i-link">
+                <div class="osbb-info-block-l-i-img"></div>
+                <div class="osbb-info-block-l-i-link-txt">Київтеплоенерго (тепло та ГВП)</div>
+            </a>
+        </li>
+        <li class="osbb-info-block-l-i">
+            <a href="" class="osbb-info-block-l-i-link">
+                <div class="osbb-info-block-l-i-img"></div>
+                <div class="osbb-info-block-l-i-link-txt">Київводоканал (ХВП)</div>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<!--Информация про тарифы-->
+<div class="osbb-tariffs">
+    <div class="osbb-tariffs-block">
+        <div class="osbb-line"></div>
+        <div class="osbb-gallery-title">Тарифы</div>
+
+        <div class="osbb-tariffs-inner">
+            <form class="osbb-tariffs-form">
+                <div class="form-osbb-inner">
+                    <div class="form-osbb-inner-block">
+                        <div class="form-osbb-input-block">
+                            <div class="form-osbb-input-txt">Введите площадь вашего дома (кв/м)</div>
+                            <input type="number" id="datepicker1" class="input-textarea" placeholder="2000" required="required">
+                        </div>
+                    </div>
+                    <div lass="form-osbb-inner-block">
+                        <div class="form-osbb-input-block">
+                            <div class="form-osbb-input-txt">Введите количество квартир</div>
+                            <input type="number" id="datepicker2" class="input-textarea" placeholder="56" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-osbb-radio-wrap">
+                    <div class="form-osbb-input-txt">Колическтво месяцев</div>
+                    <div class="form-osbb-radio">
+                        <label for="route1">
+                            <input type="radio" class="input-radio" id="route1" name="class" checked="checked">
+                            <span class="form-osbb-check">3 мес</span>
+                        </label>
+                        <label for="route2">
+                            <input type="radio" class="input-radio" id="route2" name="class">
+                            <span class="form-osbb-check">6 мес</span>
+                        </label>
+                        <label for="route3">
+                            <input type="radio" class="input-radio" id="route3" name="class">
+                            <span class="form-osbb-check">12 мес</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="osbb-tariffs-note">
+                <p class="osbb-tariffs-note-txt">*Цена на услуги в целом - 600.00 грн.</p>
+                <p  class="osbb-tariffs-note-txt">**Сумма на одну квартиру в месяц - 600.00 грн.</p>
+                <div  class="osbb-tariffs-note-icon-wrap">
+                    <div  class="osbb-tariffs-note-icon"></div>
+                    <p  class="osbb-tariffs-note-txt">Начиная с момента регистрации ОСМД на сайте предоставляется
+                        <span class="osbb-tariffs-note-green">90 дней
+                            <span class="osbb-tariffs-note-up">
+                                бесплатного
+                            </span>
+                        </span> использования сервиса.
+                    </p>
+                </div>
+                <div class="osbb-tariffs-note-cost"><span>Стоимость:</span><span> 0.00</span><span>грн.</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Слайдер Новости-->
+<div class="osbb-line"></div>
+<div class="osbb-gallery-title">Последние новости</div>
+<div class="slider-news">
+    <ul id="carousel2" class="osbb-news-container">
+        <li class="osbb-news-slide">
+            <div class="clearfix osbb-news-slide-inner">
+                <h2 class="osbb-news">Повышение контроля руководства за<br> деятельностью ОСББ.</h2>
+                <div class="osbb-news-img-wrap">
+                    <img class="osbb-news-img" src="img/office_building.jpg">
+                </div>
+                <div class="osbb-news-txt-wrap">
+                    <div class="osbb-news-txt">Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе,
+                        сохранение истории платежей, начисление квартплат. Информирование о текущем балансе, сохранение истории платежей,
+                        начисление квартплат.
+                    </div>
+                    <div class="osbb-news-txt"> Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                    </div>
+                    <a class="osbb-news-link" href="">Читать полностью <span class="osbb-news-link-arrow"></span></a>
+                </div>
+            </div>
+        </li>
+        <li class="osbb-news-slide clearfix">
+            <div class="clearfix osbb-news-slide-inner">
+                <h2 class="osbb-news">Повышение контроля руководства за<br> деятельностью ОСББ.</h2>
+                <div class="osbb-news-img-wrap">
+                    <img class="osbb-news-img" src="img/office_building.jpg">
+                </div>
+                <div class="osbb-news-txt-wrap">
+                    <div class="osbb-news-txt">Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе,
+                        сохранение истории платежей, начисление квартплат. Информирование о текущем балансе, сохранение истории платежей,
+                        начисление квартплат.
+                    </div>
+                    <div class="osbb-news-txt"> Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                    </div>
+                    <a class="osbb-news-link" href="">Читать полностью <span class="osbb-news-link-arrow"></span></a>
+                </div>
+            </div>
+        </li>
+        <li class="osbb-news-slide clearfix">
+            <div class="clearfix osbb-news-slide-inner">
+                <h2 class="osbb-news">Повышение контроля руководства за<br> деятельностью ОСББ.</h2>
+                <div class="osbb-news-img-wrap">
+                    <img class="osbb-news-img" src="img/office_building.jpg">
+                </div>
+                <div class="osbb-news-txt-wrap">
+                    <div class="osbb-news-txt">Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе,
+                        сохранение истории платежей, начисление квартплат. Информирование о текущем балансе, сохранение истории платежей,
+                        начисление квартплат.
+                    </div>
+                    <div class="osbb-news-txt"> Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                    </div>
+                    <a class="osbb-news-link" href="">Читать полностью <span class="osbb-news-link-arrow"></span></a>
+                </div>
+            </div>
+        </li>
+        <li class="osbb-news-slide clearfix">
+            <div class="clearfix osbb-news-slide-inner">
+                <h2 class="osbb-news">Повышение контроля руководства за<br> деятельностью ОСББ.</h2>
+                <div class="osbb-news-img-wrap">
+                    <img class="osbb-news-img" src="img/office_building.jpg">
+                </div>
+                <div class="osbb-news-txt-wrap">
+                    <div class="osbb-news-txt">Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе,
+                        сохранение истории платежей, начисление квартплат. Информирование о текущем балансе, сохранение истории платежей,
+                        начисление квартплат.
+                    </div>
+                    <div class="osbb-news-txt"> Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                        Информирование о текущем балансе, сохранение истории платежей, начисление квартплат.
+                    </div>
+                    <a class="osbb-news-link" href="">Читать полностью <span class="osbb-news-link-arrow"></span></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="osbb-gallery-link-wrap">
+    <a href="" class="osbb-gallery-link btn-line">Смотреть все новости</a>
+    <div class="osbb-plant-left"></div>
+</div>
+
+<!--Подвал-->
+<footer class="osbb-footer">
+    <ul class="osbb-footer-l">
+        <li class="osbb-footer-l-i">
+            <h3 class="contact-top-title title-bottom">
+                <div><span>Оcбб</span> "Гончара 62"</div>
+            </h3>
+            <p class="osbb-footer-l-i-txt">
+                Огромное количество успешных проектов, не оставило нашу компанию без драгоценного опыта.
+            </p>
+            <p class="osbb-footer-l-i-txt">
+                Мы профессионалы своего дела!
+            </p>
+            <div class="osbb-footer-l-i-link">
+                <a class="osbb-footer-l-i-link-tw" href=""></a>
+                <a class="osbb-footer-l-i-link-fb" href=""></a>
+                <a class="osbb-footer-l-i-link-tl" href=""></a>
+            </div>
+        </li>
+    </ul>
+    <ul class="osbb-footer-menu">
+        <li class="osbb-footer-menu-block">
+            <ul class="osbb-footer-menu-left">
+                <li> <h3 class="osbb-footer-title">Навигация</h3></li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Главная</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Объявления</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Управление ОСМД</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Отчетность деятельности</a>
+                </li>
+            </ul>
+            <ul class="osbb-footer-menu-right">
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Форум для жителей</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Контакты</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Регистрация</a>
+                </li>
+                <li class="osbb-footer-menu-l-i">
+                    <a class="osbb-footer-menu-l-i-link" href="">Войти</a>
+                </li>
+            </ul>
+        </li>
+        <li class="osbb-footer-contact-block">
+            <h3 class="osbb-footer-title">Контакты</h3>
+            <ul>
+                <li class="osbb-footer-contact-l-i">
+                    <div class="osbb-footer-contact-num">
+                        +38 (067) 329 29 47
+                    </div>
+                </li>
+                <li class="osbb-footer-contact-l-i">
+                    <a href="mailto:e-mailmail@i.ua" class="osbb-footer-contact-l-i-link osbb-footer-contact-info">
+                        e-mailmail@i.ua
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
